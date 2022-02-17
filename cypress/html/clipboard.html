@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cypress Clipboard Test</title>
+  </head>
+  <body>
+    <button id="Copy">Copy</button>
+    <button id="Paste">Paste</button>
+    <pre id="Output">empty</pre>
+    <script type="text/javascript">
+      const setOutput = (value) => document.getElementById('Output').innerHTML = value;
+      const doCopy = () => navigator.clipboard.writeText(`hello world! ${new Date().toLocaleTimeString()}`).catch(console.warn);
+      const doPaste = () => navigator.clipboard.readText().then(setOutput).catch(console.warn);
+      document.getElementById('Copy').addEventListener('click', doCopy);
+      document.getElementById('Paste').addEventListener('click', doPaste);
+    </script>
+  </body>
+</html>

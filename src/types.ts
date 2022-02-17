@@ -8,6 +8,7 @@ export type BrowserPermissionName = keyof BrowserPermissions
 
 export interface BrowserPermissions {
   camera: PermissionState
+  clipboard: PermissionState
   microphone: PermissionState
   notifications: PermissionState
   geolocation: PermissionState

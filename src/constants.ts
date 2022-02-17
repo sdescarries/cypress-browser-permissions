@@ -24,6 +24,7 @@ export const PERMISSIONS_PREF_NAME_BY_FAMILY: Record<
     javascript: 'javascript',
     plugins: 'plugins',
     camera: 'media_stream',
+    clipboard: 'clipboard',
     microphone: 'media_stream',
     popups: 'popups',
   },
@@ -34,6 +35,7 @@ export const PERMISSIONS_PREF_NAME_BY_FAMILY: Record<
     geolocation: 'geo',
     images: 'image',
 
+    clipboard: undefined,
     cookies: undefined,
     javascript: undefined,
     plugins: undefined,

@@ -4,6 +4,7 @@
             "notifications": "allow",
             "geolocation": "allow",
             "camera": "allow",
+            "clipboard": "allow",
             "microphone": "allow",
             "images": "allow",
             "javascript": "allow",
